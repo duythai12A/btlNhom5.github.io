@@ -1,0 +1,173 @@
+@import '/css/base.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Phan navbar*/
+.header {
+    position:fixed;
+    height: 80px;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 100;
+   background-color: #fff;
+}
+
+.header__navbar {
+    display: flex;
+    align-items:center; 
+    margin-right: 40px;
+    margin-left: 40px; 
+}
+.header__navbar-logo{
+    flex: 0.2;
+    margin-right: 20px;
+}
+
+.header__navbar-logo img {
+  
+    width: 70px;
+    height: 40px;
+    margin-top: 20px;
+    
+}
+
+.header__navbar-menu{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+
+.header__navbar-menu li{
+    list-style: none;
+    color: #000;
+   font-size: 13px;
+   font-weight: 700;
+   cursor: pointer;
+   text-transform: uppercase;
+}
+
+.haeder__navbar-menu-item a{
+    color:  #6c757b;
+}
+
+.haeder__navbar-menu-item a:hover{
+    color: #000;
+    transition: .5s;
+}
+
+/* phan view bar */
+
+.checkout-progress-bar{
+   margin-top: 80px ;
+   background-color: #fff;
+   height: 80px;
+}
+
+.checkout-progress-bar-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 80px;
+    border-top: 1px solid #d2d1d4;
+}
+
+.check-out-bar-item{
+    text-align: center;
+    color: #333f48;
+}
+
+.check-out-bar-item span{
+    
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #77757f;
+}
+
+.check-out-bar-item .step{
+    border: 1px solid #d2d1d4;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #d2d1d4;
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+
+.check-out-bar-item:not(:last-child):after{
+    content: "";
+    width: 48px;
+    height: 1px;
+    background-color: #d2d1d4;
+    display: inline-block;
+    margin: 0px 24px;
+}
+
+.checkout-progress-bar-list li.prev .step{
+    background-color: #63b1bc;
+    color: #fff;
+    border-color: #63b1bc;
+    color: #fff;
+}
+
+
+.checkout-progress-bar li.prev span {
+    color: #333f48;
+   
+}
+
+
+.success-message{
+    background-color: #63b1bc;
+    margin-top: 40px;
+}
+
+.succes-mesage-info{
+  text-align: center;
+  transform: translateY(20%);
+  background-color: #63b1bc;
+ 
+}
+
+.succes-message-photo{
+    max-width:20% ;
+    max-height: 20%;
+    display: inline-block; 
+    border-radius: 100%;
+}
+.succes-message-photo img{
+    width: 98%;
+    border-radius: 100%;
+}
+
+.succes-message-detail{
+    margin-top: 20px;
+}
+
+.succes-message-detail h2{
+   font-size: 24px;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+
+.succes-message-detail p{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+ }
+
+html{
+    background-color: #63b1bc;
+ }

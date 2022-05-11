@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hima-Fashion</title>
+    <link rel="stylesheet" href="/css/thanh_toan/gioHang.css">
+    <link rel="text/html" href="/css/base.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header__navbar">
+
+                <div class = "header__navbar-logo">
+                    <a href="/index.html">
+                        <img src="/images/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class = "header__navbar-menu">
+                    <li class="haeder__navbar-menu-item">
+                        Thanh toán đơn hàng
+                    </li>  
+                    <li class="haeder__navbar-menu-item">
+                        <a href="/index.html" >Tiếp tục mua sắm</a>
+                    </li>       
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="checkout-progress-bar">
+                <ul class="checkout-progress-bar-list">
+                    <li class="check-out-bar-item current">
+                        <span class="step">1</span>
+                        <span>Giỏ hàng</span>
+                    </li>
+                    <li class="check-out-bar-item">
+                        <span class="step">2</span>
+                        <span>Đặt hàng</span>
+                    </li>
+                    <li class="check-out-bar-item">
+                        <span class="step">3</span>
+                        <span>Hoàn tất</span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="checkout-container">
+                <div class="checkout-container-left">
+                    <div class="checkout-cart-promotion-notification">
+                        <div class="notification-item">
+                            <div class="icon-freeship">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <p>
+                                Bạn đủ điều kiên để nhận miễn phí vận chuyển
+                            </p>
+                        </div>
+                    </div>
+                    <div class="checkout-review">
+                        <div class="checkout-title">
+                        <h2>Sản phẩm</h2>
+                        </div>
+                        <table class="checkout-cart-items" id="table-checkout">
+                            <thead>
+                                <tr>
+                                    <th class="col item">
+                                        <span>Sản phẩm</span>
+                                    </th>
+                                    <th class="col price">
+                                        <span>Giá tiền</span>
+                                    </th>
+                                    <th class="col qty">
+                                        <span>Số lượng</span>
+                                    </th>
+                                    <th class="col subtotal">
+                                        <span>Tổng tiền</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody" >
+
+                                <!-- <script src="/js/clickQty.js"></script> -->
+                                
+                            </tbody>    
+                        </table>  
+                        <!-- <script src="/js/totalCart.js"></script>        -->
+                    </div>
+                </div>
+
+                <div class="checkout-container-right">
+                    <div class="checkout-summary">
+                        <div class="checkout-summary-title">Đơn hàng</div>
+                        <div class="checkout-totals">
+                            <table>
+                                <tbody id="checkout-summary">
+                                    <!-- <tr>
+                                        <th>Giá gốc</th>
+                                        <td id="totals-ori">169.000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phí vận chuyển</th>
+                                        <td id="price-ship">0 ₫</td>
+                                    </tr>
+                                    <tr class="grand-totals">
+                                        <th>Tổng tiền thanh toán</th>
+                                        <td id="totals" >169.000</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="checkout-proceed-checkout">
+                            <a href="/html/thanh_toan/datHang.html">
+                                <button class="btn-place-oder">Đặt hàng</button>
+                            </a>
+                            
+                        </div>
+                        <div class="pay-note">
+                            <p>
+                                Chúng tôi chấp nhận thanh toán:
+                            </p> 
+                            <img src="/images/pay-note/payment-note.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-view">
+                
+                <div class="category-items">
+                    <div class="block-title">Có thể bạn sẽ thích</div>
+                  
+                    <div class="block-content">
+                        <div class="category-items-slide">
+                            <i class="fa-solid fa-angle-left" id="prev"></i>
+                           <div class="slick-list">
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-item-info">
+                                    <div class="product-item-photo">
+                                        <a href="" class="product-img-container">
+                                            <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                        </a>
+                                    </div>
+                                    <div class="product-item-details">
+                                        <a href="" class="kind-product" >Áo phông</a>
+                                        <h3 class="product-item-name">
+                                            <a href="">Áo phông nữ</a>
+                                        </h3>
+                                        <div class="price-box">
+                                            <span class="price">169.000 ₫</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                           </div>
+                            <i class="fa-solid fa-angle-right" id="next"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- <script src="/js/sanPham.js"></script> -->
+    <script src="/js/thuvien.js"></script>
+    <script>
+         showCartCheckout();
+    </script>
+    <script>
+        Order();
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import '/css/base.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-login{
+    height: 800px;
+    background-color: rgba(110, 208, 219, 0.203);
+    position: relative;
+}
+
+.form-container{
+    width: 400px;
+    height: 550px;
+    background-color: #fff;
+    border: 1px solid #d2d1d4;
+    margin-left: 40%;
+    margin-top: 7%;
+    position: absolute;
+}
+
+.form-header-login{
+    text-align: center;
+    margin: 10px 40px;
+    border-bottom: 1px solid #d2d1d4;
+}
+
+.form-header-login h2{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 46px;
+   
+}
+
+.form-info-login b{
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.form-info-login div{
+    margin: 20px 40px;
+    background: #f9f9f9;
+    position: relative;
+    border-bottom: 1px solid #d2d1d4;
+}
+
+.form-info-login input{
+    width: 100%;
+}
+
+.form-info-login label {
+    display: block;
+    color: #77757f;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.focus{
+    font-size: 11px !important;
+    transform: translateY(-50%);
+}
+
+.form-control {
+    width: 100%;
+    background: #f9f9f9;
+    height: 46px;
+    border: none;
+    color: #333f48;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 23px 16px 7px 16px;
+    outline:none;
+    cursor: pointer;
+}
+
+.button-login{
+    background-color: #333f48;
+    line-height: 46px;
+    text-align: center;
+    margin: 0px 20px 20px 20px;
+}
+
+.button-login .btn-login{
+    width: 100%;
+    background-color:#333f48;
+    line-height: 46px;
+    color: #f9f9f9;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.form-footer {
+    margin: 0px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #77757f;
+}
+
+.form-footer a{
+    font-weight: 600;
+    font-size: 14px;
+    color: #333f48;
+}

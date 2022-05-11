@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hima-Fashion</title>
+    <link rel="stylesheet" href="/css/loaidoituong.css">
+    <link rel="text/html" href="/css/base.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <nav class="header__navbar">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <div class = "header__navbar-logo">
+                    <a href="/index.html">
+                        <img src="/images/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class = "header__navbar-menu">
+                        <li class="haeder__navbar-menu-item">
+                            <a href="/index.html">TRANG CHỦ</a>
+                        </li>
+                        <li class="haeder__navbar-menu-item">
+                            <a href="" class="active">NỮ</a>
+                        </li>
+                        <li class="haeder__navbar-menu-item">
+                            <a href="/html/nam.html">NAM</a>
+                        </li>
+                        <li class="haeder__navbar-menu-item">
+                            <a href="/html/treem.html">TRẺ EM</a> 
+                        </li>
+                        <li class="haeder__navbar-menu-item">
+                            <a href="/html/sale.html">SALE</a>
+                        </li>         
+                </div>
+
+                <div class= "header__navbar-search">
+                    <button class ="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" name placeholder="Bạn tìm gì..." class = "search-input">
+                </div>
+
+                <div class = "header__navbar-icon">
+                        <li class ="header-icon">
+                            <a href="" class = "header-icon-link" Thông báo>
+                                <i class="fa-solid fa-bell fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class ="header-icon">
+                            <a href="" class = "header-icon-link" Trợ giúp>
+                                <i class="fa-solid fa-circle-info fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class ="header-icon">
+                            <a href="" class = "header-icon-link" Đăng nhập>
+                                <i class="fa-solid fa-user fa-lg"></i>
+                            </a>
+                        </li>
+                        <li class ="header-icon">
+                            <a  class = "header-icon-link" onclick="showCart()" Giỏ hàng>
+                                <i class="fa-solid fa-bag-shopping fa-lg"></i>
+                                <span id="countsp">0</span>
+                            </a>
+                        </li>
+                       
+                </div>
+
+                
+            </nav>
+            <div class="show-cart" id="showCart">
+                <div class="table-product">
+
+                    <table class="checkout-cart-items" id="table-checkout">
+                        <thead>
+                            <tr>
+                                <th class="col item">
+                                    <span>Sản phẩm</span>
+                                </th>
+                                <th class="col price">
+                                    <span>Giá tiền</span>
+                                </th>
+                                <th class="col qty">
+                                    <span>Số lượng</span>
+                                </th>
+                                <th class="col subtotal">
+                                    <span>Tổng tiền</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody" >
+                            <!-- <script src="/js/clickQty.js"></script> -->
+                        </tbody> 
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">
+                                    <a href="/html/thanh_toan/gioHang.html">
+                                        <button class="viewCart">
+                                            Xem giỏ hàng
+                                        </button>
+                                    </a>
+                                </td>
+                                    
+                            </tr>
+                        </tfoot>
+                          
+                    </table>  
+                </div>
+                
+            </div>
+        </header>
+        <main class="main">
+            <div class="kind-tab">
+                <ul class="items">
+                    <li class="item">
+                        <a href="/index.html"> Trang chủ</a> | 
+                    </li>
+                    <li class="item">
+                        Nữ
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category-view">
+                <div class="category-img">
+                    <a href="/html/thoitranghangngay.html"><img src="/images/categogy/category-img.png" alt=""></a>
+                </div>
+                
+                <div class="category-items">
+                    <div class="block-title">Danh mục sản phẩm</div>
+                  
+                    <div class="block-content">
+                        <div class="category-items-slide">
+                            <i class="fa-solid fa-angle-left" id="prev"></i>
+                           <div class="slick-list">
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                   <a href="/html/nu/aophong.html">
+                                       <img src="/images/categogy/category-aophong-photo.png" alt="">
+                                   </a>
+                                   <a href="" class="category-item-kind">Áo phông</a>
+                               </div>
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                   <a href="">
+                                       <img src="/images/categogy/category-aopolo-photo.png" alt="">
+                                   </a>
+                                   <a href="" class="category-item-kind">Áo polo</a>
+                               </div>
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                   <a href="">
+                                       <img src="/images/categogy/category-aosomi-photo.jpg" alt="">
+                                   </a>
+                                   <a href="" class="category-item-kind">Áo sơ mi</a>
+                               </div>
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                   <a href="">
+                                       <img src="/images/categogy/category-aolen-photo.png" alt="">
+                                   </a>
+                                   <a href="" class="category-item-kind">Áo len</a>
+                               </div>
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                   <a href="">
+                                       <img src="/images/categogy/category-bomacnha-photo.png" alt="">
+                                   </a>
+                                   <a href="" class="category-item-kind">Bộ mặc nhà</a>
+                               </div>
+                               <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                <a href="">
+                                    <img src="/images/categogy/category-dam-photo.png" alt="">
+                                </a>
+                                <a href="" class="category-item-kind">Đầm</a>
+                                </div>
+                                <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                    <a href="">
+                                        <img src="/images/categogy/category-chanvay-photo.png" alt="">
+                                    </a>
+                                    <a href="" class="category-item-kind">Chân váy</a>
+                                </div>
+                                <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                    <a href="">
+                                        <img src="/images/categogy/category-quanshort-photo.png" alt="">
+                                    </a>
+                                    <a href="" class="category-item-kind">Quần shorts</a>
+                                </div>
+                                <div class="category-item-photo col c-4 m-3-4 l-2-4">
+                                    <a href="">
+                                        <img src="/images/categogy/category-quanjean-photo.png" alt="">
+                                    </a>
+                                    <a href="" class="category-item-kind">Quần jean</a>
+                                </div>
+                           </div>
+                            <i class="fa-solid fa-angle-right" id="next"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="category-img">
+                    <a href="/html/bosuutap.html"><img src="/images/categogy/caterory-bosuutap-nu.jpg" alt=""></a>
+                </div>
+            </div>
+            <div class="block-product-tab">
+                <div class="block-heading">
+                    <h2 class="title">Sản phẩm mới</h2>
+                </div>
+                <div class="block-content">
+                    <ul class="product-items">
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                        <li class="product-card row col c-6 m-4 l-3">
+
+                            <div class="product-item-info">
+                                <div class="product-item-photo">
+                                    <a href="/html/chitiensanpham.html" class="product-img-container">
+                                        <img src="/images/new-product/new-product-1.jpg" alt="product-img-photo">
+                                    </a>
+                                </div>
+                                <div class="product-item-details">
+                                    <a href="" class="kind-product" >Áo phông</a>
+                                    <h3 class="product-item-name">
+                                        <a href="/html/chitiensanpham.html">Áo phông nữ</a>
+                                    </h3>
+                                    <div class="price-box">
+                                        <span class="price">169.000 ₫</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footert-col">
+                        <h4>Thông tin công ty</h4>
+                        <ul>
+                            <li>Trụ sở chính: Đông Thành, H.Xuân Trường, T.Nam Định</li>
+                            <li>Địa chỉ liên hệ: Xuân Kiên, H.Xuân Trường, T.Nam Định</li>
+                            <li>Số điện thoại: xxxxxxxxx</li>
+                            <li>Địa chỉ email:xxxx@hima.com</li>
+                        </ul>
+                    </div>
+                    <div class="footert-col">
+                        <h4>Thương hiệu</h4>
+                        <ul>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footert-col">
+                        <h4>Hỗ trợ</h4>
+                        <ul>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Kiểm tra đơn hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="footert-col">
+                        <h4>Theo dõi</h4>
+                        <div class="social-licks">
+                            <li><a href="">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </footer>
+    </div>
+    <script src="/js/thuvien.js"></script>
+</body>
+</html>

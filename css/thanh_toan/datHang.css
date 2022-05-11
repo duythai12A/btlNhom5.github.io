@@ -1,0 +1,493 @@
+@import '/css/base.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Phan navbar*/
+.header {
+    position:fixed;
+    height: 80px;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 100;
+   background-color: #fff;
+}
+
+.header__navbar {
+    display: flex;
+    align-items:center; 
+    height: 80px;
+    margin-right: 40px;
+    margin-left:  40px; 
+}
+
+.header__navbar-logo{
+    flex: 0.2;
+    margin-right: 20px;
+}
+.header__navbar-logo img {
+  
+    width: 70px;
+    height: 40px;
+    margin-top: 20px;
+    
+}
+
+.header__navbar-menu{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__navbar-menu li{
+    list-style: none;
+    color: #000;
+   font-size: 13px;
+   font-weight: 700;
+   cursor: pointer;
+   text-transform: uppercase;
+}
+
+.haeder__navbar-menu-item a{
+    color:  #6c757b;
+}
+
+.haeder__navbar-menu-item a:hover{
+    color: #000;
+    transition: .5s;
+}
+
+/* phan view bar */
+
+.checkout-progress-bar{
+    margin-top: 80px ;
+    background-color: #fff;
+    height: 80px;
+ }
+ 
+ .checkout-progress-bar-list{
+     list-style: none;
+     display: flex;
+     justify-content: center;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 80px;
+     border-top: 1px solid #d2d1d4;
+ }
+ 
+
+.check-out-bar-item{
+    text-align: center;
+    color: #333f48;
+}
+
+.check-out-bar-item span{
+    
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #77757f;
+}
+
+.check-out-bar-item .step{
+    border: 1px solid #d2d1d4;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+    color: #d2d1d4;
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+
+.check-out-bar-item:not(:last-child):after{
+    content: "";
+    width: 48px;
+    height: 1px;
+    background-color: #d2d1d4;
+    display: inline-block;
+    margin: 0px 24px;
+}
+
+.checkout-progress-bar-list li.prev .step{
+    background-color: #63b1bc;
+    color: #fff;
+    border-color: #63b1bc;
+    color: #fff;
+}
+
+.checkout-progress-bar-list li.current .step{
+    background-color: #333f48;
+    border-color: #333f48;
+    color: #fff;
+}
+
+.checkout-progress-bar li.prev span {
+    color: #333f48;
+}
+
+
+.checkout-progress-bar li.current span {
+    color: #333f48;
+}
+
+/* phan view container */
+
+.checkout-container{
+    display: flex;
+    margin: 80px 40px 10px 40px;
+    justify-content: space-between;
+   
+}
+
+.checkout-container-left{
+    background-color: #f9f9f9;
+    margin-right: 5px;
+    width: 60%;
+    
+}
+
+.checkout-container-right{
+    background-color: #f9f9f9;
+    
+    width: 40%;
+
+}
+
+/* phan thong tin giao hang */
+
+.checkout-shipping{
+    margin: 40px;
+}
+
+.checkout-container-title{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.checkout-container-title h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333f48; 
+}
+
+.go-back{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.go-back i{
+   padding-right: 2px; 
+}
+
+.go-back a{
+    text-decoration: none; 
+    color: #333f48; 
+}
+
+.go-back a:hover{
+    text-decoration: underline;
+}
+
+.checkout-step-des{
+    font-size: 14px;
+    line-height: 16px;
+    color: #77757f;
+    margin-bottom: 20px;
+}
+
+.checkout-step-des a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #333f48; 
+}
+
+.checkout-shipping-form {
+    max-width: 480px;
+    width: 480px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    background: #f9f9f9;
+    position: relative;
+    border: 1px solid #d2d1d4;
+}
+
+
+.form-group label {
+    display: block;
+    color: #77757f;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 32px;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    transition: 0.2s;
+}
+
+.focus{
+    font-size: 11px !important;
+    transform: translateY(-60%);
+}
+
+.form-group{
+    border: 1px solid #d2d1d4;
+}
+
+.form-control {
+    width: 98%;
+    background: #f9f9f9;
+    height: 56px;
+    border: none;
+    color: #333f48;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 23px 16px 7px 16px;
+    outline:none;
+    cursor: pointer;
+}
+
+/* phan chi tiet don hang */
+
+.checkout-review{
+    margin: 40px 40px 80px 40px;
+    border-top: 1px solid  #d2d1d4;
+}
+
+.checkout-title h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333f48;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.checkout-cart-items{
+    display: table;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+.checkout-cart-items thead tr .col {
+    background: #333f48;
+    color: #e8e8ea;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 12px 16px;
+    text-align:center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+
+.checkout-cart-items .col.item {
+    width: 40%;
+}
+
+.checkout-cart-items .col.price {
+    width: 20%;
+    padding-left: 15px;
+}
+
+.checkout-cart-items .col.qty {
+    width: 20%;
+}
+
+.checkout-cart-items .col.subtotal {
+    width: 20%;
+    padding-left: 15px;
+}
+
+.checkout-cart-items .cart-item-info {
+    display: flex;
+}
+
+.checkout-cart-items .cart-item-photo {
+    margin-right: 12px;
+    position: relative;
+    width: 60px;
+    min-width: 60px;
+   
+}
+
+.checkout-cart-items .cart-item-photo  img {
+    max-width: 100%;
+}
+
+.checkout-cart-items .cart-item-name a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #77757f;
+    margin-bottom: 13px;
+}
+
+.checkout-cart-items .cart-item-name a:hover {
+   color: #000;
+   text-decoration: underline;
+}
+
+.checkout-cart-items .cart-item-option .swatch-option.text {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.checkout-cart-items tbody tr .qty{
+    text-align: center;
+    
+}
+
+/* phan lua chon phuong thuc thanh toan */
+.checkout-payment-method{
+    margin: 40px;
+    border-top: 1px solid #d2d1d4;
+}
+
+.checkout-step-title h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333f48;
+    margin-top: 40px;
+    margin-bottom: 20px;
+   
+}
+
+.checkout-step-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-payment-method-section label {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 18px 40px 18px 65px;
+    border: 1px solid #d2d1d4;
+    cursor: pointer;
+    
+}
+
+.checkout-payment-method-section input[type=radio] {
+    opacity: 0;;
+    position: absolute;
+    cursor: pointer;
+}
+
+#cashondelivery:checked ~ span::before{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYgMTJDOS4zIDEyIDEyIDkuMyAxMiA2QzEyIDIuNyA5LjMgMCA2IDBDMi43IDAgMCAyLjcgMCA2QzAgOS4zIDIuNyAxMiA2IDEyWiIgZmlsbD0iIzMzM0Y0OCIvPgo8L3N2Zz4K);
+    background-size: 14px;
+}
+
+#banking:checked ~ span::before{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYgMTJDOS4zIDEyIDEyIDkuMyAxMiA2QzEyIDIuNyA5LjMgMCA2IDBDMi43IDAgMCAyLjcgMCA2QzAgOS4zIDIuNyAxMiA2IDEyWiIgZmlsbD0iIzMzM0Y0OCIvPgo8L3N2Zz4K);
+    background-size: 14px;
+}
+
+.checkout-payment-method-section span:before {
+    position: absolute;
+    content: "";
+    left: 18px;
+    top: 18px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #1d0d5f;
+    border-radius: 100%;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+
+}
+
+.checkout-payment-method-section span{
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkout-payment-method-section span b{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.checkout-payment-method-section span img{
+    max-width: 100%;
+    max-height: 32px;
+    cursor: pointer;
+}
+
+/* phan don hang */
+
+.checkout-container-right{
+    height: 610px;
+}
+
+.checkout-summary{
+    margin: 0px 60px;
+}
+
+
+.checkout-summary-title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #333f48;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.checkout-totals{
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.checkout-totals th{
+    padding-right: 100px;
+    padding-bottom: 10px;
+   
+}
+
+.checkout-proceed-checkout {
+    border-top: 1px solid #d2d1d4;
+    padding: 20px;
+}
+.btn-place-oder{
+    margin-top: 40px;
+    width: 100%;
+    background: #333f48;
+    color: #e8e8ea;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 12px 16px;
+    text-align:center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #f6f6f6;
+    cursor: pointer;
+}
+
